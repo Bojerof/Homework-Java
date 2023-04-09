@@ -34,10 +34,13 @@ public class Task3{
                 return calcul(summ);
 
                 case '/':
+                if (num2 != 0){
                 summ = num1 / num2;
                 list.add(summ);
                 System.out.printf("Равно %d \n " , summ);
                 return calcul(summ);
+                }
+                else System.out.println("На ноль не делиться!");
                 
             }
             
